@@ -1,0 +1,131 @@
+#mainContainer {
+    margin: 5vh 20vh 0 20vh;
+}
+
+#topCard {
+    display: grid;
+    grid-area: topCard;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "profilePic bioSection";
+    height: 25vh;
+    border: black 3px solid;
+}
+
+.profilePic {
+    grid-area: profilePic;
+    height: 25vh;
+    object-fit: cover;
+}
+
+.bioSection {
+    border-left: black 3px solid;
+    grid-area: bioSection;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1.5fr;
+    grid-template-areas:
+        "profileName btn1 btn2"
+        "following followers posts"
+        "bioParagraphs bioParagraphs bioParagraphs";
+    height: 25vh;
+}
+
+.profileName {
+    grid-area: profileName;
+    text-align: center;
+    margin: auto;
+}
+
+.btn1 {
+    grid-area: btn1;
+    text-align: center;
+    margin: auto;
+}
+
+.btn2 {
+    grid-area: btn2;
+    text-align: center;
+    margin: auto;
+}
+
+.following {
+    grid-area: following;
+    /* text-align: center; */
+    margin: auto;
+}
+
+.followers {
+    grid-area: followers;
+    /* text-align: center; */
+    margin: auto;
+}
+
+.posts {
+    grid-area: posts;
+    /* text-align: center; */
+    margin: auto;
+}
+
+.bioParagraph {
+    grid-area: bioParagraphs;
+    margin-left: 3vh;
+    margin-right: 3vh;
+    margin-top: 2vh;
+}
+
+button {
+    height: 4vh;
+    width: 10vh;
+    border-radius: 12px;
+}
+
+h1 {
+    margin: 0;
+}
+
+#posts {
+    gap: 1vw;
+    margin: auto;
+    display: grid;
+    margin-top: 5vh;
+    height: 60vh;
+    border: 3px solid black;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "card1 card2 card3";
+}
+
+.card1,
+.card2,
+.card3 {
+    border: 1px solid gray;
+    height: 60vh;
+    width: 100%;
+}
+
+.card1 {
+    grid-area: card1;
+}
+
+.card2 {
+    grid-area: card2;
+}
+
+.card3 {
+    grid-area: card3;
+}
+
+.textCard1 {
+    display: none
+}
+
+.textCard2 {
+    display: none
+}
+
+.textCard3 {
+    display: none
+}
