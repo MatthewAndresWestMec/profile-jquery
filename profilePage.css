@@ -2,6 +2,9 @@
     margin: 5vh 20vh 0 20vh;
 }
 
+body{
+    background-color: #313030;
+}
 #topCard {
     display: grid;
     grid-area: topCard;
@@ -81,7 +84,8 @@ button {
     border-radius: 12px;
 }
 
-h1 {
+.text1 h1 {
+    padding:5vh;
     margin: 0;
 }
 
@@ -104,28 +108,50 @@ h1 {
     border: 1px solid gray;
     height: 60vh;
     width: 100%;
+
 }
 
 .card1 {
     grid-area: card1;
+    background-color: gray;
 }
 
 .card2 {
     grid-area: card2;
+        background-color: gray;
 }
 
 .card3 {
     grid-area: card3;
+        background-color: gray;
 }
 
 .textCard1 {
-    display: none
+   width: 100%;
+   height:100%;
+   background-color: white;
 }
 
 .textCard2 {
-    display: none
-}
+width: 100%;
+    height: 100%;}
 
 .textCard3 {
-    display: none
+width: 100%;
+height: 100%;}
+
+.text1 p{
+    margin:0;
+
 }
+
+.text1{
+    text-align: center;
+}
+
+ol, ul {
+    list-style-type: none;
+    margin:0;
+    padding-left:0;
+}
+
