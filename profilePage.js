@@ -9,7 +9,7 @@ $(function(){
       timeoutId = setTimeout(function () {
         $("li").fadeTo(2000, 1);
         $("ul").slideDown(2000).show(1000);
-      }, 1000);
+      }, 500);
     });
     
     $(".card1").on("mouseleave", function () {
